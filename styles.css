@@ -1,0 +1,125 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #343a40; /* Dark gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(135deg, #495057, #212529); /* Dark gradient background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Reduced padding for smaller screens */
+    text-align: center;
+    width: 90%; /* Use percentage for width */
+    max-width: 400px; /* Maximum width for larger screens */
+}
+
+h1 {
+    font-size: 2rem; /* Responsive font size */
+    margin-bottom: 20px;
+    color: #ffffff; /* White color for text */
+}
+
+.man-lighting {
+    position: relative;
+    margin: 20px 0;
+}
+
+.smoke {
+    fill: rgba(255, 255, 255, 0.7); /* Light smoke color */
+    animation: smokeAnimation 2s infinite; /* Animation for smoke */
+}
+
+@keyframes smokeAnimation {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-5px, -20px) scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-10px, -40px) scale(2);
+        opacity: 0;
+    }
+}
+
+.counter-display {
+    font-size: 1.5rem; /* Responsive font size */
+    margin-bottom: 20px;
+    color: #ffffff; /* White color for text */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons on smaller screens */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Full width for buttons */
+    font-size: 1rem; /* Responsive font size */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Animation for the cigar light */
+.cigar-light {
+    animation: lightAnimation 1s infinite; /* Animation for the cigar light */
+}
+
+@keyframes lightAnimation {
+    0%, 100% {
+        stroke-opacity: 0;
+    }
+    50% {
+        stroke-opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 600px) {
+    .button-group {
+        flex-direction: row; /* Align buttons side by side on larger screens */
+    }
+}
+
+.reset-button {
+    max-width: 100px;
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
