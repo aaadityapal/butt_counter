@@ -29,7 +29,7 @@ A simple counter application that allows users to increment a count and visualiz
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/counter-app.git
+   git clone https://github.com/aaadityapal/butt-counter.git
    ```
 
 2. Navigate to the project directory:
@@ -46,7 +46,7 @@ A simple counter application that allows users to increment a count and visualiz
 
 ## Deployment
 
-This project is deployed on Netlify. You can view the live application at [your-netlify-url](https://your-netlify-url.netlify.app).
+This project is deployed on Netlify. You can view the live application at [DEMO](https://buttcounter.netlify.app).
 
 ## Contributing
 
