@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overtime Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="overtime-styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="homeButton" class="home-button">← Home</button>
+        <h1>Overtime Tracker</h1>
+        
+        <div class="overtime-display">
+            <div class="time-section">
+                <h3>Regular Hours</h3>
+                <div class="time-input-group">
+                    <input type="time" id="startTime" value="09:00">
+                    <span>to</span>
+                    <input type="time" id="endTime" value="17:00">
+                </div>
+                <p>Regular Hours: <span id="regularHours">8.0</span> hours</p>
+            </div>
+
+            <div class="time-section">
+                <h3>Actual Hours Worked</h3>
+                <div class="time-input-group">
+                    <input type="time" id="actualStartTime" value="09:00">
+                    <span>to</span>
+                    <input type="time" id="actualEndTime" value="17:00">
+                </div>
+                <p>Total Hours: <span id="totalHours">8.0</span> hours</p>
+            </div>
+
+            <div class="overtime-result">
+                <h2>Overtime Hours: <span id="overtimeHours">0.0</span></h2>
+                <div id="overtimeStatus" class="status-indicator">No Overtime</div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="calculateButton">Calculate Overtime</button>
+            <button id="resetOvertimeButton">Reset</button>
+        </div>
+
+        <div class="overtime-history">
+            <h3>Overtime History</h3>
+            <div id="historyList" class="history-list">
+                <p class="no-history">No overtime records yet</p>
+            </div>
+            <button id="clearHistoryButton" class="clear-history-btn">Clear History</button>
+        </div>
+    </div>
+
+    <script src="overtime-script.js"></script>
+</body>
+</html>

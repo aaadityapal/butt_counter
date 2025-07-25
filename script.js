@@ -19,3 +19,8 @@ document.getElementById('resetButton').addEventListener('click', () => {
     localStorage.setItem('counter', counter); // Reset the counter in Local Storage
     document.getElementById('counterValue').innerText = counter; // Update the displayed value
 });
+
+// Navigate to overtime page when the overtime button is clicked
+document.getElementById('overtimeButton').addEventListener('click', () => {
+    window.location.href = 'overtime.html';
+});
