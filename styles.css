@@ -123,3 +123,11 @@ button:focus {
 .reset-button:hover {
     background-color: #c82333; /* Darker red on hover */
 }
+
+.overtime-nav-button {
+    background-color: #28a745; /* Bootstrap success color */
+}
+
+.overtime-nav-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
